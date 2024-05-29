@@ -1,0 +1,180 @@
+[ {
+  "line" : 1,
+  "elements" : [ {
+    "start_timestamp" : "2024-05-28T05:48:14.942Z",
+    "line" : 16,
+    "name" : "Verify if Booking is being Succesfully created using CreateBookingAPI",
+    "description" : "",
+    "id" : "validating-restfull-booker;verify-if-booking-is-being-succesfully-created-using-createbookingapi;;2",
+    "type" : "scenario",
+    "keyword" : "Scenario Outline",
+    "steps" : [ {
+      "result" : {
+        "duration" : 1387838600,
+        "status" : "passed"
+      },
+      "line" : 4,
+      "name" : "Creates a new auth token to use for access \"admin\"  \"password123\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"admin\"",
+          "offset" : 43
+        }, {
+          "val" : "\"password123\"",
+          "offset" : 52
+        } ],
+        "location" : "stepDefinations.StepDef1.creates_a_new_auth_token_to_use_for_access(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "Given "
+    }, {
+      "result" : {
+        "duration" : 2790009300,
+        "status" : "passed"
+      },
+      "line" : 5,
+      "name" : "user calls the \"AddAuthAPI\" with \"POST\" http request",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"AddAuthAPI\"",
+          "offset" : 15
+        }, {
+          "val" : "\"POST\"",
+          "offset" : 33
+        } ],
+        "location" : "stepDefinations.StepDef1.user_calls_the_with_http_request(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "When "
+    }, {
+      "result" : {
+        "duration" : 3019400,
+        "status" : "passed"
+      },
+      "line" : 6,
+      "name" : "the API call got succeded with status code 200",
+      "match" : {
+        "arguments" : [ {
+          "val" : "200",
+          "offset" : 43
+        } ],
+        "location" : "stepDefinations.StepDef1.the_API_call_got_succeded_with_status_code(java.lang.Integer)"
+      },
+      "keyword" : "Then "
+    } ]
+  }, {
+    "start_timestamp" : "2024-05-28T05:48:19.159Z",
+    "line" : 19,
+    "name" : "Verify if Get Booker ID functionality is working",
+    "description" : "",
+    "id" : "validating-restfull-booker;verify-if-get-booker-id-functionality-is-working",
+    "type" : "scenario",
+    "keyword" : "Scenario",
+    "steps" : [ {
+      "result" : {
+        "duration" : 2988300,
+        "status" : "passed"
+      },
+      "line" : 20,
+      "name" : "Creates a new auth token to uses for access \"<username>\"  \"<password>\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"<username>\"",
+          "offset" : 44
+        }, {
+          "val" : "\"<password>\"",
+          "offset" : 58
+        } ],
+        "location" : "stepDefinations.getStepDef.creates_a_new_auth_token_to_uses_for_access(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "Given "
+    }, {
+      "result" : {
+        "duration" : 1576876800,
+        "status" : "passed"
+      },
+      "line" : 21,
+      "name" : "user call \"getBookerAPI\" with \"GET\" http request",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"getBookerAPI\"",
+          "offset" : 10
+        }, {
+          "val" : "\"GET\"",
+          "offset" : 30
+        } ],
+        "location" : "stepDefinations.getStepDef.user_call_with_http_request(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "When "
+    }, {
+      "result" : {
+        "status" : "passed"
+      },
+      "line" : 22,
+      "name" : "the API call got succes with status code 200",
+      "match" : {
+        "arguments" : [ {
+          "val" : "200",
+          "offset" : 41
+        } ],
+        "location" : "stepDefinations.getStepDef.the_API_call_got_succes_with_status_code(java.lang.Integer)"
+      },
+      "keyword" : "Then "
+    } ]
+  }, {
+    "start_timestamp" : "2024-05-28T05:48:20.753Z",
+    "line" : 35,
+    "name" : "Verify if Booking is being Succesfully created using CreateBooking",
+    "description" : "",
+    "id" : "validating-restfull-booker;verify-if-booking-is-being-succesfully-created-using-createbooking;;2",
+    "type" : "scenario",
+    "keyword" : "Scenario Outline",
+    "steps" : [ {
+      "result" : {
+        "duration" : 15038000,
+        "status" : "passed"
+      },
+      "line" : 27,
+      "name" : "Creates a new booking ID of user with details \"Jim\"  \"Brown\" \"Breakfast\"  \"true\"",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"Jim\"",
+          "offset" : 46
+        }, {
+          "val" : "\"Brown\"",
+          "offset" : 53
+        }, {
+          "val" : "\"Breakfast\"",
+          "offset" : 61
+        }, {
+          "val" : "\"true\"",
+          "offset" : 74
+        } ],
+        "location" : "stepDefinations.StepDef1.Creates_a_new_booking_ID_of_user_with_details(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+      },
+      "keyword" : "Given "
+    }, {
+      "result" : {
+        "duration" : 1225751100,
+        "status" : "passed"
+      },
+      "line" : 28,
+      "name" : "user exclaim the \"AddBookerAPI\" with \"POST\" http request",
+      "match" : {
+        "arguments" : [ {
+          "val" : "\"AddBookerAPI\"",
+          "offset" : 17
+        }, {
+          "val" : "\"POST\"",
+          "offset" : 37
+        } ],
+        "location" : "stepDefinations.StepDef1.user_exclaim_the_with_http_request(java.lang.String,java.lang.String)"
+      },
+      "keyword" : "When "
+    } ]
+  } ],
+  "name" : "Validating Restfull Booker",
+  "description" : "",
+  "id" : "validating-restfull-booker",
+  "keyword" : "Feature",
+  "uri" : "file:src/test/java/features/booker.feature",
+  "tags" : [ ]
+} ]
